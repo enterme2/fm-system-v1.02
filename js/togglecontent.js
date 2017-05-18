@@ -9,6 +9,19 @@ function hideAdminTools(){
   {
     admintools.style.display="block";
   }
+
+  //only admin can view search icon
+  var searchIcon = document.getElementById('searchIcon');
+  var usertype = document.getElementById('usertype').value;
+  if (usertype=="Technician")
+  {
+    searchIcon.style.display="none";
+  } 
+  else
+  {
+    searchIcon.style.display="block";
+  }
+
 }
 
  function showLogin(){
