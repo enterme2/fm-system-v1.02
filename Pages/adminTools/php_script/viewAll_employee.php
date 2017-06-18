@@ -1,7 +1,7 @@
 <?php
 require('../php/connect.php');
 
-$result=mysqli_query($db,"SELECT * FROM employees");
+$result=mysqli_query($db,"SELECT * FROM employees ORDER BY nameEmployee");
 if (!$result)
   {
   echo "Sorry, this website is experiencing problems.";

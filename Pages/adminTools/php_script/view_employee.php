@@ -34,6 +34,7 @@ $nameEmployee = $test['nameEmployee'];
 $username = $test['username'];
 $password = $test['password'];
 $usertype = $test['usertype'];
+$assigned_area = $test['assigned_area'];
 if($usertype=="Admin")
     {
         $selected1="";

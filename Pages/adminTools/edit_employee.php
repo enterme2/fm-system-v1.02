@@ -34,12 +34,24 @@
             <label> Name :</label>
             <input class="w3-input w3-border" type="text" name="nameEmployee" required value='<?php echo $nameEmployee ?>'>  
           </div>
+        </div>
 
-          <div class="w3-col m2 w3-padding-small">
+        <div class="w3-row w3-container">
+          <div class="w3-col m4 w3-padding-small">
             <label> Staff ID :</label>
-            <input class="w3-input w3-border" type="text" name="nameEmployee" required value='<?php echo $staff_ID ?>'> 
+            <input class="w3-input w3-border" type="text" name="staff_ID"  value='<?php echo $staff_ID ?>'> 
           </div>
-          <div class="w3-col m2 w3-padding-small">
+        </div>
+
+        <div class="w3-row w3-container">
+          <div class="w3-col m4 w3-padding-small">
+            <label> Assigned Area :</label>
+            <input class="w3-input w3-border" type="text" name="assigned_area" placeholder="District/Location" value='<?php echo $assigned_area ?>'> 
+          </div>
+        </div>
+
+        <div class="w3-row w3-container">
+          <div class="w3-col m4 w3-padding-small">
             <label> User Type :</label>
             <select class="w3-select w3-border" id="usertype" name="usertype" >
             <option value="" <?php echo $selected1 ?>>Select</option>
@@ -50,24 +62,28 @@
         </div>
 
         <div class="w3-row w3-container w3-padding-16">
-          <div class="w3-col m2 w3-padding-small">
+          <div class="w3-col m4 w3-padding-small">
             <label> Username :</label>
-            <input class="w3-input w3-border" type="text" name="nameEmployee" required value='<?php echo $username ?>'>  
+            <input class="w3-input w3-border" type="text" name="username" required value='<?php echo $username ?>'>  
           </div>
+        </div>
 
-          <div class="w3-col m2 w3-padding-small">
+        <div class="w3-row w3-container">
+          <div class="w3-col m4 w3-padding-small">
             <label> Password :</label>
-            <input class="w3-input w3-border" type="text" name="nameEmployee" required value='<?php echo $password ?>'> 
+            <input class="w3-input w3-border" type="text" name="password" required value='<?php echo $password ?>'>
           </div>
         </div>
 
         <div class="w3-row w3-container" style="padding-top: 32px">
-          <div class="w3-col m4 w3-padding-small"><wbr></div>
           <div class="w3-col m2 w3-padding-small">
-          <input class="w3-button w3-round w3-theme w3-hover-aqua w3-padding-large w3-block" type="submit" name="Add" value="Save">
+            <input class="w3-button w3-round w3-theme w3-hover-aqua w3-padding-large w3-block" type="submit" name="Add" value="Save">
+          </div>   
+  </form>
+        <div class="w3-col m2 w3-padding-small">
+            <button class="w3-button w3-round w3-theme w3-hover-aqua w3-padding-large w3-block" onclick="window.location='show_employee.php'">Cancel</button>
           </div>
         </div>
-      </form>
 
 </div>
 
