@@ -53,7 +53,7 @@ if (!$query)
   echo("Error description: " . mysqli_error($db));
   }
 else{
-mysqli_free_result($query);
+
 mysqli_close($db);
 header("Location:../showAll_complaint.php");
 }

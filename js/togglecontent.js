@@ -24,6 +24,21 @@ function hideAdminTools(){
 
 }
 
+function showLogin2(){
+
+  var detectError = document.getElementById('detectError').value;
+  var loginModal = document.getElementById('loginform2');
+  if (detectError=="1")
+  {
+    loginModal.style.display="block";
+  }
+  else
+  {
+    loginModal.style.display="none";
+  }
+}
+
+
  function showLogin(){
 
   var detectError = document.getElementById('detectError').value;

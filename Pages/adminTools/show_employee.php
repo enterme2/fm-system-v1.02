@@ -23,7 +23,8 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-    <h1 class="w3-text-teal">AWS Employee</h1>
+    <h1 class="w3-text-teal">AWS Employee  <button onclick="window.location='add_employee.php'" class="fa fa-plus-square w3-button" aria-hidden="true"></button></h1> 
+    
     <?php include('php_script/viewAll_employee.php');?>
     </div>
   </div>

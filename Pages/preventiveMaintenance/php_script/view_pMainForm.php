@@ -125,6 +125,6 @@ $pendingJustification = $test['pendingJustification'];
         $selectedJustification4="selected"; 
     }
 
-mysqli_free_result($result);
+
 mysqli_close($db);
 ?>
